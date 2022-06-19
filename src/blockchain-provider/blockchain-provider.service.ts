@@ -4,8 +4,9 @@ import { ethers } from 'ethers';
 import { crookedSnoutsWhitelistABI, whitelistPolygonAddress } from '../utils/constants';
 
 const whitelistContractProvider = () => {
-  const RPC = process.env.POLYGON_RPC_LINK;
-  const provider = new ethers.providers.JsonRpcProvider(RPC);
+  // const RPC = process.env.POLYGON_RPC_LINK;
+  const WSS = process.env.GETBLOCK_WSS_LINK;
+  const provider = new ethers.providers.WebSocketProvider(`${WSS}${process.env.GETBLOCK_API_KEY}`);
   const whitelistContract = new ethers.Contract(whitelistPolygonAddress, crookedSnoutsWhitelistABI, provider);
 
   return whitelistContract;

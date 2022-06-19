@@ -12,53 +12,53 @@ export class BlockchainProviderController {
     ) {}
     
     // get max whitelist spots
-    @Get('/whitelist/spots/max')
-    @Header('Access-Control-Allow-Origin', crooked)
+    // @Header('Access-Control-Allow-Origin', crooked)
+  @Get('/whitelist/spots/max')
   getMaxWhitelistSpots(): Promise<number> {
     return this.BlockchainProvider.getMaxWhitelistSpots();
   }
 
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/spots/max-public')
-  @Header('Access-Control-Allow-Origin', crooked)
   getMaxPublicWhitelistSpots(): Promise<number> {
     return this.BlockchainProvider.getMaxPublicWhitelistSpots();
   }
 
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/spots/max-owner')
-  @Header('Access-Control-Allow-Origin', crooked)
   getMaxOwnerWhitelistSpots(): Promise<number> {
     return this.BlockchainProvider.getMaxOwnerWhitelistSpots();
   }
 
   // get taken spots
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/spots/public-taken')
-  @Header('Access-Control-Allow-Origin', crooked)
   getPublicSpotsTaken(): Promise<number> {
     return this.BlockchainProvider.getPublicSpotsTaken();
   }
 
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/spots/owner-taken')
-  @Header('Access-Control-Allow-Origin', crooked)
   getOwnerSpotsTaken(): Promise<number> {
     return this.BlockchainProvider.getOwnerSpotsTaken();
   }
 
   // get whitelist open and close time
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/open')
-  @Header('Access-Control-Allow-Origin', crooked)
   getWhitelistOpen(): Promise<number> {
     return this.BlockchainProvider.getWhitelistOpen();
   }
 
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/close')
-  @Header('Access-Control-Allow-Origin', crooked)
   getWhitelistClose(): Promise<number> {
     return this.BlockchainProvider.getWhitelistClose();
   }
 
   // check if address is whitelisted
+  // @Header('Access-Control-Allow-Origin', crooked)
   @Get('/whitelist/isWhitelisted/:address')
-  @Header('Access-Control-Allow-Origin', crooked)
   getIsWhitelisted(
     @Param('address') address: string
   ): Promise<boolean> {

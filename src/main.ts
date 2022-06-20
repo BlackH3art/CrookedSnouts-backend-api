@@ -6,6 +6,7 @@ async function bootstrap() {
 
   app.enableCors({
     origin: 'https://crookedsnouts.com',
+    // origin: 'http://localhost:3000'
   });
 
   await app.listen(process.env.PORT || 3500);

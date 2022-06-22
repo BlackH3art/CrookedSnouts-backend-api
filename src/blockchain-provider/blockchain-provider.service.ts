@@ -1,11 +1,12 @@
 import { Injectable } from '@nestjs/common';
 
 import { ethers } from 'ethers';
-import { crookedSnoutsWhitelistABI, whitelistPolygonAddress } from '../utils/constants';
+import { crookedSnoutsWhitelistABI, whitelistMumbaiAddress, whitelistPolygonAddress } from '../utils/constants';
 
 const whitelistContractProvider = () => {
   const ALCHEMY_RPC = process.env.POLYGON_RPC_LINK;
   const GETBLOCK_LINK = process.env.GETBLOCK_LINK;
+  const MUMBAI_RPC = process.env.MUMBAI_RPC_LINK;
   const provider = new ethers.providers.JsonRpcProvider(ALCHEMY_RPC);
   const whitelistContract = new ethers.Contract(whitelistPolygonAddress, crookedSnoutsWhitelistABI, provider);
 

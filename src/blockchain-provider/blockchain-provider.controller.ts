@@ -1,8 +1,7 @@
 import { Controller, Get, Header, Inject, Param } from '@nestjs/common';
 import { BlockchainProviderService } from './blockchain-provider.service';
+import { crooked, local } from 'src/utils/constants';
 
-const crooked = "https://crookedsnouts.com";
-const local = "http://localhost:3000";
 
 @Controller('blockchain-provider')
 export class BlockchainProviderController {

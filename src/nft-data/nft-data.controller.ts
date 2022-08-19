@@ -1,5 +1,6 @@
-import { Controller, Get, Inject, Param } from '@nestjs/common';
+import { Controller, Get, Header, Inject, Param } from '@nestjs/common';
 import { NftDataService } from './nft-data.service';
+import { crooked, local } from 'src/utils/constants';
 
 import { NFTsResponseInterface } from 'src/interfaces/NFTsResponseInterface';
 
@@ -12,6 +13,7 @@ export class NftDataController {
   ) {}
 
 
+  @Header('Access-Control-Allow-Origin', local)
   @Get('/:address')
   getAddressNfts(
     @Param('address') address: string

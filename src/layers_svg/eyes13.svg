@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(-1,0,0,1,395.136,-0.415045)">
+        <path d="M142.782,149.617C145.036,149.923 170.383,142.008 177.646,141.316C180.849,141.011 184.287,145.259 186.362,145.466C187.932,145.623 191.148,143.738 190.097,142.561C188.368,140.624 180.315,134.359 175.986,133.845C171.657,133.331 168.078,137.601 164.125,139.479C158.591,142.108 140.529,149.311 142.782,149.617Z"/>
+    </g>
+    <path d="M142.782,149.617C143.059,150.862 170.383,142.008 177.646,141.316C180.849,141.011 184.287,145.259 186.362,145.466C187.932,145.623 191.148,143.738 190.097,142.561C188.368,140.624 181.454,133.03 175.986,133.845C168.1,135.021 142.506,148.372 142.782,149.617Z"/>
+    <g transform="matrix(1,0,0,1,58.1063,-2.07523)">
+        <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124" style="fill:white;"/>
+        <clipPath id="_clip1">
+            <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124"/>
+        </clipPath>
+        <g clip-path="url(#_clip1)">
+            <ellipse cx="168.167" cy="176.378" rx="3.632" ry="5.447" style="stroke:black;stroke-width:2.76px;"/>
+        </g>
+        <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124" style="fill:none;stroke:black;stroke-width:2.76px;"/>
+    </g>
+    <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124" style="fill:white;"/>
+    <clipPath id="_clip2">
+        <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124"/>
+    </clipPath>
+    <g clip-path="url(#_clip2)">
+        <ellipse cx="168.167" cy="176.378" rx="3.632" ry="5.447" style="stroke:black;stroke-width:2.76px;"/>
+    </g>
+    <ellipse cx="169.205" cy="178.453" rx="21.271" ry="24.124" style="fill:none;stroke:black;stroke-width:2.76px;"/>
+</svg>

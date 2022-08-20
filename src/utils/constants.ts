@@ -849,4 +849,5 @@ export const whitelistMumbaiAddress = "0x6A5F4e655BD57D58020F1324D29b62741558C68
 export const whitelistRinkebyAddress = "0x92c94C1b9Ce787e74aA7A67CB93E27776A541147";
 export const whitelistPolygonAddress = "0xE2047175C0F685f813938Cc8Fdc027259F0C87de";
 
-export const collectionMumbaiAddress = "0x1C437D99547197A029fE647a77aDc790EB9AeaA9";
+export const collectionMumbaiAddress = "0x4bA7F3F65F80Be50E5c56f603210B172Fe134dB8";
+export const collectionPolygonAddress = "0xdEa625395f4b275189125E99fdC6f1072DB5000f";

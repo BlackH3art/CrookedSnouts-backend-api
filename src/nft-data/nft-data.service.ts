@@ -18,7 +18,7 @@ import { collectionPolygonAddress, crookedSnoutsCollectionABI } from 'src/utils/
 
 // mainnet settings
 const settings = {
-  apiKey: process.env.POLYGON_RPC_LINK, // Replace with your Alchemy API key.
+  apiKey: process.env.POLYGON_API_KEY, // Replace with your Alchemy API key.
   network: Network.MATIC_MAINNET // Replace with your network.
 };
 
@@ -64,7 +64,7 @@ export class NftDataService {
       
     } catch (error) {
       console.log(error);
-      return;
+      return { error: error };
     }
   }
 }

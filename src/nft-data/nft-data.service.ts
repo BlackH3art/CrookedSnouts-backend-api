@@ -44,16 +44,27 @@ export class NftDataService {
 
   async getAddressNfts(address: string): Promise<any> {
 
-    const response: OwnedNftsResponse = await this.alchemy.nft.getNftsForOwner(address, {
-      contractAddresses: [collectionPolygonAddress]
-    });
-    
-    const nftsResponse: NFTsResponseInterface[] = response.ownedNfts.map((item) => ({
-      tokenId: item.tokenId,
-      image: item.rawMetadata.image
-    }));
-    
-    return nftsResponse;
-  }
 
+    try {
+      const response: OwnedNftsResponse = await this.alchemy.nft.getNftsForOwner(address, {
+        contractAddresses: [collectionPolygonAddress]
+      });
+  
+      console.log('response --> ', response);
+      
+      
+      const nftsResponse: NFTsResponseInterface[] = response.ownedNfts.map((item) => ({
+        tokenId: item.tokenId,
+        image: item.rawMetadata.image
+      }));
+  
+      console.log('nftresponse --> ', nftsResponse);
+      
+      return nftsResponse;
+      
+    } catch (error) {
+      console.log(error);
+      return;
+    }
+  }
 }

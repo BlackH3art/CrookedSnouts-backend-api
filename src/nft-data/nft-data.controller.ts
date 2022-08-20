@@ -13,7 +13,7 @@ export class NftDataController {
   ) {}
 
 
-  @Header('Access-Control-Allow-Origin', crooked)
+  // @Header('Access-Control-Allow-Origin', local)
   @Get('/:address')
   getAddressNfts(
     @Param('address') address: string
